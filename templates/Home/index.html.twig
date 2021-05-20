@@ -3,4 +3,10 @@
 {% block body %}
        <h1 class="bg-secondary">Welcome to symfony et bienvenue!</h1>
        <img src="{{ asset('build/test.png') }}" alt=""/>
+       <ul>
+       <li><a href="{{path('program_', {id:1}) }}">programme 1 </a></li>
+       <li><a href="{{path('program_', {id:2}) }}">programme 2 </a></li>
+       <li><a href="{{path('program_', {id:3}) }}">programme 3 </a></li>
+       <li><a href="{{path('program_', {id:4}) }}">programme 4 </a></li>
+       </ul>
 {% endblock %}
